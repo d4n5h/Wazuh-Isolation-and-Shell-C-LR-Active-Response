@@ -1,0 +1,1 @@
+# Wazuh-Isolation-and-Shell-C-LR-Active-Response
