@@ -13,11 +13,13 @@
 | Platform support | Windows only                     | Windows, Linux, macOS           |
 | Legacy support   | Requires matching Python version | Go 1.20 targets Server 2008 R2+ |
 
+
 ## Modules
 
 ### Isolation
 
 Network containment via platform-native firewalls. Blocks all traffic except whitelisted IPs (e.g. Wazuh manager).
+
 
 | Platform | Backend                                  |
 | -------- | ---------------------------------------- |
@@ -25,14 +27,17 @@ Network containment via platform-native firewalls. Blocks all traffic except whi
 | Linux    | `nftables` (auto-fallback to `iptables`) |
 | macOS    | `pfctl`                                  |
 
+
 ### Shell
 
 Remote command execution with output batched back to Wazuh logs.
+
 
 | Platform      | Executor     |
 | ------------- | ------------ |
 | Windows       | `cmd /c`     |
 | Linux / macOS | `/bin/sh -c` |
+
 
 ## Build
 
@@ -145,7 +150,7 @@ PUT /active-response?agents_list=001
   "alert": {
     "data": {
       "action": "isolate",
-      "user": "c-137labs",
+      "user": "johndoe",
       "debug": false
     }
   }
@@ -162,7 +167,7 @@ PUT /active-response?agents_list=001
   "alert": {
     "data": {
       "action": "release",
-      "user": "c-137labs",
+      "user": "johndoe",
       "debug": false
     }
   }
