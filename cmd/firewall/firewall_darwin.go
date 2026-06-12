@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/d4n5h/Wazuh-Isolation-and-Shell-C-LR-Active-Response/internal/shared"
+	"github.com/d4n5h/Wazuh-C-LR-Active-Response/internal/shared"
 )
 
 var rulesFile = filepath.Join(shared.WarDir, "firewall", "clr.rules")

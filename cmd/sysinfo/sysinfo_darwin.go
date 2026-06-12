@@ -2,7 +2,7 @@
 
 package main
 
-import "github.com/d4n5h/Wazuh-Isolation-and-Shell-C-LR-Active-Response/internal/shared"
+import "github.com/d4n5h/Wazuh-C-LR-Active-Response/internal/shared"
 
 func gatherSysinfo() (string, string) {
 	sections := []struct {

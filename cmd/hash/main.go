@@ -11,7 +11,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/d4n5h/Wazuh-Isolation-and-Shell-C-LR-Active-Response/internal/shared"
+	"github.com/d4n5h/Wazuh-C-LR-Active-Response/internal/shared"
 )
 
 var debugFile = filepath.Join(shared.WarDir, "hash.log")

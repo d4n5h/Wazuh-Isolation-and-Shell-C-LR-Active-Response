@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/d4n5h/Wazuh-Isolation-and-Shell-C-LR-Active-Response/internal/shared"
+	"github.com/d4n5h/Wazuh-C-LR-Active-Response/internal/shared"
 )
 
 var debugFile = filepath.Join(shared.WarDir, "sysinfo.log")
@@ -56,9 +56,9 @@ func main() {
 	for _, batch := range shared.BatchLines(stdout, 50) {
 		seq++
 		clr := map[string]interface{}{
-			"action": "sysinfo",
-			"user":   user,
-			"result": fmt.Sprintf("stdout: %s\nstderr: %s", strings.TrimSpace(batch), stderr),
+			"action":   "sysinfo",
+			"user":     user,
+			"result":   fmt.Sprintf("stdout: %s\nstderr: %s", strings.TrimSpace(batch), stderr),
 			"sequence": seq,
 		}
 		shared.WriteLog(logHeader, map[string]interface{}{

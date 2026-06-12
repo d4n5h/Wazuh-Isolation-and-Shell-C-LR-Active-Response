@@ -3,7 +3,7 @@
 package main
 
 import (
-	"github.com/d4n5h/Wazuh-Isolation-and-Shell-C-LR-Active-Response/internal/shared"
+	"github.com/d4n5h/Wazuh-C-LR-Active-Response/internal/shared"
 )
 
 func flushDNS() (string, string) {

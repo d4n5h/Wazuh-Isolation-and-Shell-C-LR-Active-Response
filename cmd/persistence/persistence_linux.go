@@ -5,7 +5,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/d4n5h/Wazuh-Isolation-and-Shell-C-LR-Active-Response/internal/shared"
+	"github.com/d4n5h/Wazuh-C-LR-Active-Response/internal/shared"
 )
 
 func scanPersistence() (string, string) {
