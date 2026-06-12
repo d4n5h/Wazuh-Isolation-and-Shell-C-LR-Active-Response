@@ -16,7 +16,10 @@ $targets = @(
     @{ Label = "darwin arm64";                     GoCmd = "go";         OS = "darwin";  Arch = "arm64"; Dir = "darwin-arm64";  Ext = "" }
 )
 
-$modules = @("isolation", "shell")
+$modules = @(
+    "isolation", "shell", "collect", "kill", "quarantine", "sysinfo", "user-mgmt",
+    "dns", "firewall", "yara", "hash", "persistence", "netconfig", "log-collect", "integrity"
+)
 
 foreach ($target in $targets) {
     $env:GOOS = $target.OS

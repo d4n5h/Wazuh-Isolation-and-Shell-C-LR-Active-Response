@@ -14,7 +14,7 @@ declare -a targets=(
     "darwin arm64|go|darwin|arm64|darwin-arm64|"
 )
 
-modules=(isolation shell)
+modules=(isolation shell collect kill quarantine sysinfo user-mgmt dns firewall yara hash persistence netconfig log-collect integrity)
 
 for target in "${targets[@]}"; do
     IFS='|' read -r label go_cmd os arch dir ext <<< "$target"
